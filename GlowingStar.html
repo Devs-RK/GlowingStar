@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <style>
+  h2,
+  h3 {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+  }
+
+  h2:after {
+   display: inline-block;
+   margin: 0 0 8px 20px;
+   height: 3px;
+   content: " ";
+   text-shadow: none;
+   background-color: #999;
+   width: 140px;
+  }
+
+  h2:before {
+   display: inline-block;
+   margin: 0 20px 8px 0;
+   height: 3px;
+   content: " ";
+   text-shadow: none;
+   background-color: #999;
+   width: 140px;
+  }
+ </style>
+ <style>
+  .btn {
+   display: block;
+   width: 230px;
+   height: 230px;
+   margin-left: 10px;
+  }
+  svg {
+   -webkit-animation: glowing-polygon 1300ms infinite;
+   -moz-animation: glowing-polygon 1300ms infinite;
+   -o-animation: glowing-polygon 1300ms infinite;
+   animation: glowing-polygon 1300ms infinite;
+  }
+  @-webkit-keyframes glowing-polygon {
+   0% {
+    fill: #f0f;
+    -webkit-filter: drop-shadow(0 0 3px #f0f);
+   }
+   50% {
+    fill: #0ff;
+    -webkit-filter: drop-shadow(0 0 3px #0ff);
+   }
+   100% {
+    fill: #f0f;
+    -webkit-filter: drop-shadow(0 0 3px #f0f);
+   }
+  }
+ </style>
+</head>
+
+<body>
+ <h2>Glowing STAR</h2>
+ <h3>DEVS-RK</h3>
+ <a class="btn">
+  <svg height="200" width="200">
+   <polygon points="100,10 40,200 190,80 10,90 160,200" 
+   style="fill: #32ddff">
+
+   </polygon>
+  </svg>
+ </a>
+</body>
+
+</html>
